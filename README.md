@@ -49,7 +49,7 @@ C:\Users\user\Downloads\CVE-2014-6271_Ubuntu> vagrant destroy
 
 ## Práca s Kali Linux
 
-Na pracovnej ploche sa nachádza súbor s názvom HACK. Po jeho rozkliknutí sa spustí automatický útok. Pokiaľ je útok 
+Meno aj heslo pre obe vituálne mašiny je `Vagrant`. Na pracovnej ploche sa nachádza súbor s názvom HACK. Po jeho rozkliknutí sa spustí automatický útok. Pokiaľ je útok 
 úspešný v nástroji msfconsole vojdeme do interpretačného riadku meterpreter, v ktorom následne spustíme príkaz `shell`.
 Po spustení príkazu sa dostaneme do konzoly shell na zraniteľnej mašine a môžme skúsiť následovné príkazy:
 
