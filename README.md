@@ -2,7 +2,9 @@
 
 Cieľom tohto repozitára je otestovanie bezpečnostných modulov, SELinux a AppArmor, pomocou zraniteľností CVE. Nachádza 
 sa tu niekoľko nakonfigurovaných priečikov, v ktoých sa nachádza súbor VAGRANT, ktorý slúži na automatické vytvorenie
-virtuálnych prostredí. Pre bližšie opísanie konkrétnej zraniteľnosti, súbory obsahujú README.
+virtuálnych prostredí. Pre bližšie opísanie konkrétnej zraniteľnosti, súbory obsahujú README. Pre otestovanie modulu
+Apparmor používame distribúciu Ubuntu a pre otestovanie modulu Selinux používame distribúciu Fedora. Cieľom je bez
+aktualizovania distribúcie otestovať zraniteľnosti. Jedinou inštaláciou sú potrebné aplikácie pre otestovanie zraniteľnosti. 
 
 ## Potrebné programy 
 
