@@ -1,9 +1,9 @@
 # Experimentálne otestovanie bezpečnostných modulov OS Linux
 
 Cieľom tohto repozitára je otestovanie bezpečnostných modulov, SELinux a AppArmor, pomocou zraniteľností CVE. Nachádza 
-sa tu niekoľko nakonfigurovaných priečikov, v ktoých sa nachádza súbor VAGRANT, ktorý slúži na automatické vytvorenie
+sa tu niekoľko nakonfigurovaných priečinkov, v ktorých sa nachádza súbor VAGRANT, ktorý slúži na automatické vytvorenie
 virtuálnych prostredí. Pre bližšie opísanie konkrétnej zraniteľnosti, súbory obsahujú README. Pre otestovanie modulu
-Apparmor používame distribúciu Ubuntu a pre otestovanie modulu Selinux používame distribúciu Fedora. Cieľom je bez
+Apparmor používame distribúciu Ubuntu a pre otestovanie modulu SELinux používame distribúciu Fedora. Cieľom je bez
 aktualizovania distribúcie otestovať zraniteľnosti. Jedinou inštaláciou sú potrebné aplikácie pre otestovanie zraniteľnosti. 
 
 ## Potrebné programy 
@@ -30,7 +30,7 @@ Ostáva nám už len spustiť vagrant súbor pomocou príkazu `vagrant up`:
 C:\Users\user\Downloads\CVE-2014-6271_Ubuntu> vagrant up
 ```
 
-Teraz by sa mali sami nakonfigurovať a stiahnuť virtuálne prostredia. Automaticky sa otvorí distribúcia Kali Linux, ktorou 
+Teraz by sa mali sami nakonfigurovať a stiahnuť virtuálne prostredia. Automaticky sa otvorí distribúcia Kali Linux, ktorou
 budeme útočiť.
 
 ## Vypnutie a vymazanie virtuálnych prostredí
@@ -49,19 +49,19 @@ C:\Users\user\Downloads\CVE-2014-6271_Ubuntu> vagrant destroy
 
 ## Práca s Kali Linux
 
-Meno aj heslo pre obe vituálne mašiny je `vagrant`. Na pracovnej ploche sa nachádza súbor s názvom `HACK`. Na jeho spustenie je potrebné otvoriť 
-terminál a spustiť príkaz:
+Meno aj heslo pre obe virtuálne mašiny je `vagrant`. Na pracovnej ploche sa nachádza súbor s názvom `HACK`. Na jeho spustenie je potrebné otvoriť 
+terminál a zadať príkaz:
 
 ```shell
 ./Desktop/HACK.sh
 ```
 
 Teraz sa nám v konzole spustí nástroj Metasploit, vyberie sa vhodný modul pre útok, nastavia sa potrebné premenné a spustí sa útok.
-Pokiaľ je útok úspešný v nástroji msfconsole vojdeme do interpretačného riadku meterpreter, v ktorom následne zadáme príkaz `shell`.
-Po spustení príkazu sa dostaneme do konzoly shell na zraniteľnej mašine a môžme skúsiť následovné príkazy:
+Pokiaľ je útok úspešný v nástroji Metasploit vojdeme do interpretačného riadku meterpreter, v ktorom následne zadáme príkaz `shell`.
+Po spustení príkazu sa dostaneme do konzoly shell na zraniteľnej mašine a môžeme skúsiť nasledovné príkazy:
 
 - `whoami` - povie nám aké máme privilégia
 
-- `cat /etc/shadow` a `cat /etc/passwd` - vypíšemu nám obsah súborov shadow a passwd, pokiaľ máme oprávnenie
+- `cat /etc/shadow` a `cat /etc/passwd` - vypíšeme sa nám obsah súborov shadow a passwd, pokiaľ máme oprávnenie
 
 
