@@ -31,7 +31,7 @@ C:\Users\user\Downloads\CVE-2014-6271_Ubuntu> vagrant up
 ```
 
 Teraz by sa mali sami nakonfigurovať a stiahnuť virtuálne prostredia. Automaticky sa otvorí distribúcia Kali Linux, ktorou 
-budeme útočiť. Na pracovnej ploche sa nachádza súbor, ktorý automaticky zaútočí na potencionálne zraniteľný virtuálny stroj.
+budeme útočiť.
 
 ## Vypnutie a vymazanie virtuálnych prostredí
 
